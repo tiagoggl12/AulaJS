@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS aula 01</title>
+</head>
+<body>
+        <h2>
+            O que mais pode ser feito?
+        </h2>
+        <p id="texto">Alterar os valores de atributos de um elemento HTML</p><br>
+
+        <button onclick="document.getElementById('texto').style.fontSize='40px'">
+        Aumentar a fonte
+        
+        </button><br><br><br><br><br>
+
+
+
+        <p id="produto"> Cerveja spaten 500ml 1.99r$</p>
+
+
+        <button onclick="document.getElementById('produto').style.display='none'">
+        Sim 
+        </button>
+
+
+        <button onclick="document.getElementById('produto').style.display='none'">
+            Não 
+        </button> <br><br><br><br><br><br>
+
+
+
+
+
+        <button onclick="document.getElementById('lampada').src='img/pic_bulbon.gif'">
+            Ligar a luz
+        </button>
+        <img src="img/pic_bulboff.gif" alt="desligado" id="lampada">
+
+        <button onclick="document.getElementById('lampada').src='img/pic_bulboff.gif'"> 
+            desligar a luz 
+        </button>
+        
+
+        
+    <div id="exemplo"></div>
+    <script type="text/javascript">
+        //alert('Olá Mundo');
+       
+        //document.getElementById('exemplo').innerHTML= "Olá Java script";
+
+    </script>
+
+<script>
+    
+    //let idade=18
+    //let texto_idade = idade >= 18 ? 'voce é maior de idade': ' voce é menor de idade';
+    //alert(texto_idade);
+
+
+//const escolha = confirm('Deseja sair do site?');
+//const texto = escolha === true ? "voce escolheu true": "voce escolheu false";
+//alert(texto);
+
+//const nome = prompt('digite o seu nome: ');
+
+//alert('bem vindo, ' +nome);
+
+
+/*
+leia o login e a senha de um usuãrio através de prompts e envie uma mensagem personalizada (utilize operador ternario) informando se ele estã autenticado ou nao de acordo com os valores digitados 
+
+autenticado quando o login ~e igual a 'infinity' e a senha = '1234'
+*/
+
+	
+	const login = prompt('digite seu login: ');
+	const senha = prompt('digite sua senha: ');
+	
+	
+	//let login = 'infinity'
+	let texto_login = (login === 'infinity' && senha === '1234') ? alert("certo") : alert("nao tem acesso");
+	//alert('deucerto')
+	//let senha = '1234'
+	//let texto_senha = senha = '1234' ? "certo" : "nao tem acesso"
+	
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
